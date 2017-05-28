@@ -171,9 +171,8 @@ function run(n){
     Sun(),Jupiter(),Saturn(),Uranus(),Neptune()
   ]);
 
-  print(bodies.energy().toFixed(9));
   for (let i=0; i<n; i++){ bodies.advance(0.01); }
-  print(bodies.energy().toFixed(9));
+  print(bodies.energy().toFixed(17));
 }
 
 run(50000000);

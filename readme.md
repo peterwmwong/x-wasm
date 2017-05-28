@@ -60,17 +60,16 @@ In a browser...
 
 ```sh
 > time /p/google/v8/out.gn/x64.release/d8 nbody-ref.js
--0.169075164
--0.169059907
-/p/google/v8/out.gn/x64.release/d8 nbody-ref.js  6.87s user 0.02s system 99% cpu 6.898 total
+-0.16905990680272504
+/p/google/v8/out.gn/x64.release/d8 nbody-ref.js  6.92s user 0.03s system 99% cpu 6.951 total
+
 > time /p/google/v8/out.gn/x64.release/d8 nbody-ref.js
--0.169075164
--0.169059907
-/p/google/v8/out.gn/x64.release/d8 nbody-ref.js  6.90s user 0.03s system 99% cpu 6.926 total
+-0.16905990680272504
+/p/google/v8/out.gn/x64.release/d8 nbody-ref.js  7.02s user 0.03s system 99% cpu 7.050 total
+
 > time /p/google/v8/out.gn/x64.release/d8 nbody-ref.js
--0.169075164
--0.169059907
-/p/google/v8/out.gn/x64.release/d8 nbody-ref.js  6.87s user 0.02s system 99% cpu 6.897 total
+-0.16905990680272504
+/p/google/v8/out.gn/x64.release/d8 nbody-ref.js  6.91s user 0.03s system 99% cpu 6.944 total
 ```
 
 #### C
@@ -104,3 +103,5 @@ ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-darwin16]
 -0.16905990680291394
 ruby nbody.rb  376.97s user 0.11s system 99% cpu 6:17.26 total
 ```
+
+The Ruby result appears to be less accurate aswell...
