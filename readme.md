@@ -7,6 +7,10 @@ What is the relative performance with JavaScript?
 
 ### Building
 
+Assumptions:
+  - You've installed `emsdk` by following the [WebAssembly Developer's Guide](http://webassembly.org/getting-started/developers-guide/)
+  - `emsdk` is installed at `/p/emsdk`
+
 ```zsh
 source /p/emsdk/emsdk_env.sh
 emcc nbody.c -O3 -s WASM=1 -s SIDE_MODULE=1 -o nbody.wasm
