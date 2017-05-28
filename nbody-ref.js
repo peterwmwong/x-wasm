@@ -176,4 +176,4 @@ function run(n){
   print(bodies.energy().toFixed(9));
 }
 
-run(+arguments[0]);
+run(50000000);

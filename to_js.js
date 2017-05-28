@@ -31,7 +31,7 @@ function wasmModule() {
   ;
 }
 
-console.log(wasmModule()._run());
+console.log(wasmModule()._run(50000000));
 `
 );
 

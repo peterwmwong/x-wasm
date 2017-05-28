@@ -126,9 +126,8 @@ struct planet bodies[NBODIES] = {
   }
 };
 
-double run()
+double run(int n)
 {
-  int n = 50000000;
   int i;
 
   offset_momentum(NBODIES, bodies);
@@ -138,3 +137,8 @@ double run()
   return energy(NBODIES, bodies);
 }
 
+int main(int argc, char ** argv)
+{
+  printf ("%.17f\n", run(50000000));
+  return 0;
+}
