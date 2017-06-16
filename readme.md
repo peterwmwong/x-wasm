@@ -105,3 +105,17 @@ ruby nbody.rb  376.97s user 0.11s system 99% cpu 6:17.26 total
 ```
 
 The Ruby result appears to be less accurate aswell...
+
+
+#### Crystal
+
+```sh
+> crystal --version
+Crystal 0.22.0 (2017-04-20) LLVM 4.0.0
+
+> crystal build nbody.cr --error-trace --release
+
+> time ./nbody 50000000
+-0.16905990680291394
+./nbody 50000000  8.12s user 0.03s system 99% cpu 8.192 total
+```
