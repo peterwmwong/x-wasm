@@ -28,7 +28,7 @@ Building the C reference implementation...
 In d8...
 
 ```sh
-> /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody.js
+> /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody-d8.js
 ```
 
 In a browser...
@@ -43,15 +43,15 @@ In a browser...
 #### WASM
 
 ```sh
-> time /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody.js
+> time /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody-d8.js
 -0.16905990680272504
 /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks  nbody.js  6.59s user 0.02s system 99% cpu 6.614 total
 
-> time /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody.js
+> time /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody-d8.js
 -0.16905990680272504
 /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks  nbody.js  6.58s user 0.03s system 99% cpu 6.606 total
 
-> time /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody.js
+> time /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks --wasm_no_stack_checks nbody-d8.js
 -0.16905990680272504
 /p/google/v8/out.gn/x64.release/d8 --wasm_no_bounds_checks  nbody.js  6.57s user 0.03s system 99% cpu 6.597 total
 ```
