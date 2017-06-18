@@ -17,8 +17,8 @@ for(let i = 0; i < buf.length; ++i){
 console.log(
 `'use strict';
 
-function wasmModule() {
-  return new WebAssembly.Instance(
+console.log(
+  WebAssembly.Instance(
     new WebAssembly.Module(new Uint8Array(${JSON.stringify(result)}).buffer),
     {
       env: {
@@ -27,11 +27,9 @@ function wasmModule() {
         memory: new WebAssembly.Memory({ initial: 256 }),
         table: new WebAssembly.Table({ initial: 0, element: 'anyfunc' })
       }
-    }).exports;
-  ;
-}
-
-console.log(wasmModule()._run(50000000));
+    }
+  ).exports._run(50000000)
+);
 `
 );
 
