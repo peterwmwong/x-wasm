@@ -117,8 +117,7 @@ NBodySystem.prototype.advanceBodies = function(dt){
     const by = bodyi.y;
     const bz = bodyi.z;
 
-    let bodyj;
-    bodyj = next = bodyi.next;
+    let bodyj = next = bodyi.next;
     while(bodyj !== null) {
       const jmass = bodyj.mass;
       const dx = bx - bodyj.x;

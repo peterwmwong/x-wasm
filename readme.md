@@ -72,6 +72,22 @@ In a browser...
 /p/google/v8/out.gn/x64.release/d8 nbody-ref.js  6.91s user 0.03s system 99% cpu 6.944 total
 ```
 
+#### Using a Linked List
+
+```sh
+> time /p/google/v8/out.gn/x64.release/d8 nbody-linkedList.js
+-0.16905990680272504
+/p/google/v8/out.gn/x64.release/d8 nbody-linkedList.js  6.78s user 0.02s system 99% cpu 6.810 total
+
+> time /p/google/v8/out.gn/x64.release/d8 nbody-linkedList.js
+-0.16905990680272504
+/p/google/v8/out.gn/x64.release/d8 nbody-linkedList.js  6.79s user 0.02s system 99% cpu 6.818 total
+
+> time /p/google/v8/out.gn/x64.release/d8 nbody-linkedList.js
+-0.16905990680272504
+/p/google/v8/out.gn/x64.release/d8 nbody-linkedList.js  6.78s user 0.02s system 99% cpu 6.805 total
+```
+
 #### C
 
 ```sh
